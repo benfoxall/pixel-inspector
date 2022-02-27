@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
+    />
+    <style>
+      canvas {
+        image-rendering: pixelated;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body class="sans-serif ma3">
+    <h1 class="f-headline lh-solid ma0">Pixel Inspector</h1>
+
+    <p class="mv4">
+      <output class="f3 courier flex">
+        <canvas class="outline h2 w2"></canvas>
+        <span class="ph2 pre"> - </span>
+      </output>
+    </p>
+
+    <section>
+      <img
+        src="https://tachyons.io/img/over-canvas.jpg"
+        crossorigin=""
+        class="w-100"
+        alt="night sky over land"
+      />
+    </section>
+    <!-- <p>
+      <input type="file" />
+    </p> -->
+    <script src="script.js"></script>
+  </body>
+</html>
