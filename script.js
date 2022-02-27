@@ -39,7 +39,15 @@ document.addEventListener('mousemove', ({ offsetX, offsetY, target }) => {
     const py = Math.floor(offsetY / sh);
 
     lookup.get(target, px, py);
+  }
+});
 
-    // console.log(px, py);
+const input = document.querySelector('input');
+const img = document.querySelector('img');
+
+input.addEventListener('change', (e) => {
+  if (input.files.length > 0) {
+    URL.revokeObjectURL(img.src);
+    img.src = URL.createObjectURL(input.files[0]);
   }
 });
